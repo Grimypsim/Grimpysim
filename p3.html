@@ -1,0 +1,136 @@
+<html>
+<head>
+    <title>Video Settings - My YouTube Channel</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .settings-container {
+            margin: auto;
+            width: 50%;
+            border: 2px solid red;
+            padding: 20px;
+            background-color: white;
+            text-align: left;
+        }
+
+        h2 {
+            color: red;
+        }
+
+        .settings-container label {
+            display: block;
+            margin: 10px 0;
+            color: red;
+            font-weight: bold;
+        }
+
+        .settings-container select,
+        .settings-container input[type="file"] {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid red;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .radio-options {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px;
+            width: 100%;
+            background-color: red;
+            color: white;
+            border: none;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkred;
+        }
+
+        .navigation-buttons {
+            margin-top: 20px;
+        }
+
+        .navigation-buttons a {
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            display: inline-block;
+            font-size: 14px;
+        }
+
+        .navigation-buttons a:hover {
+            background-color: darkred;
+        }
+
+        a {
+            display: block;
+            margin-top: 20px;
+            color: red;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Video Settings</h2>
+    <p>Customize the display of videos and select files for upload.</p>
+
+    <form action="apply.html" method="get">
+        <div class="settings-container">
+            <label for="color">Color:</label>
+            <div class="radio-options">
+                <input type="radio" id="color-red" name="color" value="red">
+                <label for="color-red">Red</label>
+            </div>
+            <div class="radio-options">
+                <input type="radio" id="color-black" name="color" value="black">
+                <label for="color-black">Black</label>
+            </div>
+
+            <label for="paper-type">Video Category:</label>
+            <select id="paper-type" name="video-category">
+                <option value="vlog">Vlog</option>
+                <option value="tutorial">Tutorial</option>
+                <option value="gaming">Gaming</option>
+            </select>
+
+            <label for="paper-size">Resolution:</label>
+            <select id="paper-size" name="resolution">
+                <option value="720p">720p</option>
+                <option value="1080p">1080p</option>
+                <option value="4K">4K</option>
+            </select>
+
+            <label for="upload-file">Select a file to upload:</label>
+            <input type="file" id="upload-file" name="upload-file">
+
+            <input type="submit" value="Apply Settings">
+        </div>
+    </form>
+
+    <div class="navigation-buttons">
+        <a href="p2.html">Prev</a>
+        <a href="p4.html">Next</a>
+    </div>
+
+</body>
+</html>
